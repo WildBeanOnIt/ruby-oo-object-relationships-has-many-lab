@@ -1,3 +1,4 @@
+require 'pry'
 class Post
 
     attr_accessor :author, :artist, :title
@@ -14,10 +15,12 @@ class Post
     end
 
     def author_name
-        if author.name == true
-        else
-            return nil
+        #binding.pry
+        if !!author == true
+            author.name
+        # # else
+        # #     return nil
         end
-
+    #author.name if author
     end
 end
